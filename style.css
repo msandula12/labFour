@@ -3,31 +3,45 @@
 	padding: 0;
 	margin: 0;
 }
-.jumbotron img {
-	margin: auto;
-	width: 100%;
-}
+
+/* page-header */
 .page-header {
 	margin: 0;
 	padding: 10px;
 	background-color: #91d0ff;
 	border: none;
 }
+h1 {
+	color: #ff1493;
+	text-shadow: 0px 0px 3px white;
+}
+
+/* jumbotron */
+.jumbotron img {
+	margin: auto;
+	width: 100%;
+}
+
+/* reservation form */
 #sidebar {
 	background-color: #9dc4b1;
-	height: 100vh;
-}
-#main {
-	background-color: #fff8b0;
-	height: 100vh;
-
+	height: 100%;
 }
 #madteaparty {
 	width: 40%;
 	float: right;
 	margin: 10px 0 10px 10px;
 }
+#sidebar button {
+	margin-bottom: 10px;
+}
 
+/* blog */
+#blog {
+	background-color: #fff8b0;
+}
+
+/* footer */
 #footer {
 	color: white;
 	text-align: left;
@@ -43,13 +57,14 @@
 
 }
 #footer a:hover {
-	color: pink;
+	color: #ffb6c1;
 	text-decoration: none;
 	cursor: pointer;
 }
 
-/*@media (max-height: @screen-md-max) {
-	#sidebar {
+/* media queries */
+@media (max-height: 991px) {
+	#sidebar, #blog {
 		height: auto;
 	}
-}*/
+}
